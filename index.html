@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/home.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#header").load("./header.html");
+$('#footer').load("./footer.html");
+});
+</script>
+<title>Marceline VQ</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="home_setup('./config/home_config.csv')">
+<div id= "header"></div>
+
+<div id="content">
+
+<div class="intro">
+  <p></p>
+  <button type="button" onclick="location.href='./about'">Learn More</button>
+</div>
+
+<div class="page-ref" id="modeling">
+  <img class="ex-img" src="./images/modeling.jpg">
+  <div class="box">
+    <h2></h2>
+    <p></p>
+    <button type="button" onclick="location.href='./modeling'">View Gallery</button>
+  </div>
+</div>
+
+<div class="page-ref" id="ropeart">
+  <img class="ex-img" src="./images/ropeart.jpg">
+  <div class="box">
+    <h2></h2>
+    <p></p>
+    <button type="button" onclick="location.href='./ropeart'">View Gallery</button>
+  </div>
+</div>
+
+<button type="button" onclick="location.href='./contact'">Contact</button>
+
+
+</div> 
+
+<div id="footer"></div>    
+
+<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+<script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+<script src="./js/loadCSV.js"></script>
+<script src="./js/home_setup.js"></script>
+</body>
+</html>

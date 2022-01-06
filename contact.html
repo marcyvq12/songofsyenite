@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/contact.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#header").load("./header.html");
+  $('#footer').load("./footer.html");
+});
+  </script>
+  <title>Contact | Marceline VQ</title>
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="content">
+<img id="contact-img" src="images/contact.jpg">
+
+
+<div class="contact-container">
+  <h2>Contact Marceline</h2>
+  <h3>Bookings and Inquiries</h3>
+  <form action="https://formspree.io/xnqglglw" method="POST">
+    <label for="fname">Name</label>
+    <input type="text" id="input-name" name="firstname" placeholder="Your name...">
+
+    <label for="email">Email</label>
+    <input type="text" id="input-email" name="email" placeholder="Your email...">
+    </select>
+
+    <label for="message">Your Message</label>
+    <textarea id="input-message" name="message" placeholder="Write something..."></textarea>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+
+  <div class="social">
+    <h3>Social</h3>
+    <a href="https://twitter.com/marcyvq12" target="_blank" style="text-decoration: none;"> 
+        <img src="./images/social_icons/icon_twitter.png"  alt="Twitter"/> </a>
+      <a href="https://instagram.com/marceline_vq" target="_blank" style="text-decoration: none;"> 
+        <img src="./images/social_icons/icon_instagram.png"  alt="Instagram"/ > </a>
+      <a href="https://modelmayhem.com/marcyvq" target="_blank" style="text-decoration: none;"> 
+        <img src="./images/social_icons/icon_modelmayhem.png"   alt="Modelmayhem"/> </a>
+      <a href="https://fetlife.com/users/3644294" target="_blank" style="text-decoration: none;"> 
+        <img src="./images/social_icons/icon_fetlife.png"  alt="Fetlife"/> </a>
+  </div>
+</div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
